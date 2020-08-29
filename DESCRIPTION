@@ -1,0 +1,10 @@
+Package: sysubiostat
+Type: Package
+Title: Internal Package for the SYSU Biostat Group
+Version: 1.0-1
+Date: 2020-08-29
+Author: SYSU Biostat Group
+Maintainer: SYSU Biostat Group <sysu.biostat@gmail.com>
+Description: This package contains the mostly used functions in our group.
+License: GPL-3
+RoxygenNote: 7.0.2

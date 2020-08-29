@@ -1,0 +1,33 @@
+#'
+#' The function estimates z-score of specific Random Variables, which measure the standard deviations from the mean
+#' 
+#' @param x specific Random Variables
+#'
+#' @note Please refer to the documentation of the \code{optim} function for method details.
+#'
+#' 
+#' @return standard z-score
+#' 
+#' @author Xia Shen
+#' 
+#' @references 
+#' Yang Z, Xu W, Zhai R, Li T, Ning Z, Pawitan Y, Shen X (2020). Triangulation of analysis strategies links complex traits to specific tissues and cell types. 
+#' \emph{Submitted}.
+#' 
+#' @seealso 
+#' \code{combined.fdr}
+#'
+#' 
+#' @examples 
+#'\dontrun{
+#'
+#' num <- c(1051, 179, 1028, 154, 1040, 159, 981, 208) 
+#' 
+#' zscore (x=num) 
+#'
+#' }
+#' @export
+#' 
+zscore <-
+function (x) 
+qnorm((rank(x, na.last = "keep") - 0.5)/sum(!is.na(x)))
