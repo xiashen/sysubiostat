@@ -53,9 +53,10 @@
 #' # Warning message:
 #' # Removed 29 rows containing missing values (geom_text). 
 #'}
-#' 
+#'
 #' @export
 #' @import ggplot2 RColorBrewer reshape2
+#'
 
 hp <- function(x,output.path = "~/Desktop/heatmap.pdf",mode = "matrix",x.lab = NA,y.lab = NA,pmatrix = NA,legend = "-log10(P)",
               low.color = 10,high.color = 1,mid.color="white",title = NA,basepoint = 0,pdf.width = NA,pdf.height = NA,
@@ -117,7 +118,7 @@ hp <- function(x,output.path = "~/Desktop/heatmap.pdf",mode = "matrix",x.lab = N
   if (is.na(x.lab) & is.na(y.lab)){
     hp <- hp + theme(axis.title = element_blank())
   } else {
-    hp <- hp + xlab(label = x.lab) + ylab(lael = y.lab)
+    hp <- hp + xlab(label = x.lab) + ylab(label = y.lab)
   }
   
   if (!axis.lab) {
