@@ -55,7 +55,7 @@
 #'}
 #' 
 #' @export
-#' @import ggplot2, RColorBrewer, reshape2
+#' @import ggplot2 RColorBrewer reshape2
 
 hp <- function(x,output.path = "~/Desktop/heatmap.pdf",mode = "matrix",x.lab = NA,y.lab = NA,pmatrix = NA,legend = "-log10(P)",
               low.color = 10,high.color = 1,mid.color="white",title = NA,basepoint = 0,pdf.width = NA,pdf.height = NA,
