@@ -11,4 +11,11 @@ require(devtools)
 install_github('xiashen/sysubiostat')
 ```
 
+Or by cloning the GitHub repository in your terminal:
+
+```{bash}
+git clone xiashen/sysubiostat
+R CMD install sysubiostat
+```
+
 Enjoy!
